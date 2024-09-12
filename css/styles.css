@@ -101,6 +101,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
+  display: inline-block;
 }
 
 .logo-dark {
@@ -342,6 +343,7 @@ address {
 .portfolio-item-info {
   padding: 32px 16px;
   border: 1px solid var(--accent);
+  border-top: none;
 }
 
 .portfolio-item-img {
@@ -374,7 +376,6 @@ address {
 }
 
 .footer-logo {
-  display: inline-block;
   margin-bottom: 16px;
 }
 
