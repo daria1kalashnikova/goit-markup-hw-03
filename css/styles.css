@@ -101,7 +101,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  display: inline-block;
 }
 
 .logo-dark {
@@ -376,6 +375,7 @@ address {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
