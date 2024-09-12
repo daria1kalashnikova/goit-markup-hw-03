@@ -1,5 +1,8 @@
 /* #region Variables */
 :root {
+  /* Fonts */
+
+  /* Colors */
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --dark: #2e2f42;
@@ -9,7 +12,13 @@
   --accent: #e7e9fc;
   --light: #f4f4fd;
   --white-background: #ffffff;
+
+  /* Others */
+  --items: 4;
+  --indent-row: 48px;
+  --indent-col: 24px;
 }
+
 /* #endregion */
 
 /* #region Base */
@@ -148,6 +157,18 @@ address {
 .btn:hover,
 .btn:focus {
   background: var(--pressed-state);
+}
+
+/* Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--indent-row);
+  column-gap: var(--indent-col);
+}
+
+.card-set-item {
+  width: calc((100% - var(--indent-col) * (var(--items)-1)) / var(--items));
 }
 /* #endregion */
 
@@ -303,6 +324,7 @@ address {
 
 .footer {
   background-color: var(--dark);
+  padding: 100px;
 }
 
 .footer-logo {
