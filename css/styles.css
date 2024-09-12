@@ -1,13 +1,22 @@
 /* #region Variables */
 :root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --white-background: #ffffff;
 }
 /* #endregion */
 
 /* #region Base */
 body {
   font-family: Roboto, sans-serif;
-  color: #434455;
-  background-color: #fff;
+  color: var(--text);
+  background-color: var(--white-background);
 }
 
 h1,
@@ -64,8 +73,12 @@ address {
   overflow: hidden;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -80,25 +93,25 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 
 .logo-dark {
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .logo-dark:active,
 .logo-dark:hover {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .logo-light {
-  color: #f4f4fd;
+  color: var(--light);
 }
 
 .logo-light:active,
 .logo-light:hover {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .address {
@@ -108,7 +121,7 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 
   display: flex;
   align-items: center;
@@ -117,7 +130,7 @@ address {
 .address-link:hover,
 .address-link:focus,
 .address-link:active {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 .address-item {
 }
@@ -128,13 +141,13 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
-  background: #4d5ae5;
+  color: var(--white-background);
+  background: var(--primary-brand);
 }
 
 .btn:hover,
 .btn:focus {
-  background: #404bbf;
+  background: var(--pressed-state);
 }
 /* #endregion */
 
@@ -142,17 +155,20 @@ address {
 
 /* Header */
 .header {
+  border-bottom: 1px solid var(--accent);
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: 76px;
+  gap: 76px;
 }
 
 .header-logo {
@@ -163,7 +179,7 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 
   display: flex;
   align-items: center;
@@ -172,24 +188,26 @@ address {
 .header-nav-item {
 }
 .header-nav-link {
+  display: block;
+  padding: 24px 0;
 }
 
 .header-nav-link:hover,
 .header-nav-link:active,
 .header-nav-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 /* Hero */
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--dark);
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: var(--white-background);
 }
 
 /* Advantages */
@@ -206,18 +224,18 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .advantages-item-caption {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 
 /* Team */
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light);
 }
 .team-title {
   font-weight: 700;
@@ -226,12 +244,12 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .team-list {
 }
 .team-member {
-  background-color: #fff;
+  background-color: var(--white-background);
 }
 .team-member-img {
 }
@@ -241,14 +259,14 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .team-member-position {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #434455;
+  color: var(--text);
 }
 
 /* Portfolio */
@@ -260,7 +278,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .portfolio-list {
 }
@@ -273,18 +291,18 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .portfolio-item-caption {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 /* Footer */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--dark);
 }
 
 .footer-logo {
@@ -294,6 +312,6 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light);
 }
 /* #endregion */
