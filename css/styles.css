@@ -68,6 +68,7 @@ address {
 /* #endregion */
 
 /* #region Common */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,7 +76,6 @@ address {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -256,11 +256,14 @@ address {
 .advantages {
   background-color: var(--white-background);
 }
-.advantages-title {
-}
+
 .advantages-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .advantages-item {
+  width: 264px;
 }
 .advantages-item-title {
   font-weight: 500;
@@ -365,7 +368,14 @@ address {
   padding: 100px;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .footer-logo {
+  margin-bottom: 16px;
 }
 
 .footer-caption {
@@ -373,5 +383,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
+  width: 264px;
 }
 /* #endregion */
