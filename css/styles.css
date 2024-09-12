@@ -83,6 +83,7 @@ address {
 }
 
 .section {
+  width: 100%;
   padding: 120px 0;
 }
 
@@ -90,9 +91,11 @@ address {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+.section-title {
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .logo {
@@ -152,6 +155,14 @@ address {
   letter-spacing: 0.04em;
   color: var(--white-background);
   background: var(--primary-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover,
@@ -222,7 +233,17 @@ address {
 /* Hero */
 .hero {
   background-color: var(--dark);
+  padding: 188px 0;
 }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
@@ -233,6 +254,7 @@ address {
 
 /* Advantages */
 .advantages {
+  background-color: var(--white-background);
 }
 .advantages-title {
 }
@@ -246,6 +268,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .advantages-item-caption {
   font-size: 16px;
@@ -271,7 +294,13 @@ address {
 }
 .team-member {
   background-color: var(--white-background);
+  border-radius: 0 0 4px 4px;
 }
+
+.team-member-info {
+  padding: 32px 16px;
+}
+
 .team-member-img {
 }
 .team-member-name {
@@ -281,6 +310,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .team-member-position {
   font-size: 16px;
@@ -292,6 +322,11 @@ address {
 
 /* Portfolio */
 .portfolio {
+  background-color: var(--white-background);
+}
+
+.portfolio-item-info {
+  padding: 32px 16px;
 }
 .portfolio-title {
   font-size: 36px;
@@ -304,6 +339,8 @@ address {
 .portfolio-list {
 }
 .portfolio-item {
+  align-items: flex-start;
+  background-color: var(--white-background);
 }
 .portfolio-item-img {
 }
@@ -313,6 +350,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .portfolio-item-caption {
   font-size: 16px;
